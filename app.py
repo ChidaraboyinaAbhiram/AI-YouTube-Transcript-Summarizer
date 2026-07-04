@@ -897,10 +897,11 @@ if st.session_state.current_summary:
     </div>
     """, unsafe_allow_html=True)
     
-    tab_summary, tab_timeline, tab_takeaways, tab_quiz, tab_download, tab_transcript, tab_metrics, tab_history = st.tabs([
+    tab_summary, tab_timeline, tab_takeaways, tab_quotes, tab_quiz, tab_download, tab_transcript, tab_metrics, tab_history = st.tabs([
         "📄 Summary",
         "🕒 Timeline",
         "📌 Takeaways",
+        "💬 Quotes",
         "❓ Quiz",
         "📥 Download",
         "📑 Video Transcript",
@@ -993,9 +994,19 @@ if st.session_state.current_summary:
             st.markdown(insights.replace("Actionable Insights", "").lstrip(": \n").strip())
             st.markdown('</div>', unsafe_allow_html=True)
             
-
+    # Tab 4: Quotes
+    with tab_quotes:
+        st.markdown("### 💬 Key Quotes & Notations")
+        quotes = sections.get("Important Quotes", "")
+        
+        if quotes:
+            st.markdown('<div class="glass-card">', unsafe_allow_html=True)
+            st.markdown(quotes.replace("Important Quotes", "").lstrip(": \n").strip())
+            st.markdown('</div>', unsafe_allow_html=True)
+        else:
+            st.info("No important quotes identified in this video transcript.")
             
-    # Tab 6: Quiz
+    # Tab 5: Quiz
     with tab_quiz:
         st.markdown("### ❓ Practice Quiz")
         mcqs_raw = sections.get("5 MCQs with Answers", "")

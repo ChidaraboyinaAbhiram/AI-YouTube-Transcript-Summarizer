@@ -12,13 +12,14 @@ class TestPromptGeneration(unittest.TestCase):
         self.sample_transcript = "[00:10] Introduction to Python coding. [01:15] Variables and data types are fundamental concepts."
         self.sample_title = "Python for Beginners"
         
-        # Exact expected headers in markdown prompt template
+        # Exact expected headings in markdown prompt template
         self.expected_headings = [
             "# Video Title",
             "## Executive Summary",
             "## Detailed Summary",
             "## Timeline Summary",
             "## Key Takeaways",
+            "## Important Quotes",
             "## Technical Concepts",
             "## Actionable Insights",
             "## 5-Minute Revision Notes",

@@ -85,7 +85,7 @@ def build_summarization_prompt(transcript: str, style: str, title: str) -> str:
 
 ---
 ## Output Structure:
-You must output exactly these 11 sections with the exact headers listed below. Keep the headings exactly as written here:
+You must output exactly these 12 sections with the exact headers listed below. Keep the headings exactly as written here:
 
 # Video Title
 (Display the title: "{title}")
@@ -101,6 +101,9 @@ You must output exactly these 11 sections with the exact headers listed below. K
 
 ## Key Takeaways
 (List 5-7 core lessons, insights, or findings as a bulleted list.)
+
+## Important Quotes
+(Provide 2-3 notable direct quotes or key paraphrased statements, formatted as markdown blockquotes: `> "Quote"`)
 
 ## Technical Concepts
 (List and explain key terms, tools, algorithms, or concepts introduced in the video. Format as `- **Concept Name**: Explanation`.)
