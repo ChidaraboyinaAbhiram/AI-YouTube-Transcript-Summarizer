@@ -158,59 +158,73 @@ Here is a visual step-by-step walkthrough of the **AI YouTube Transcript Summari
 
 ### 1. Welcome & Input Screen
 Upon opening the application, you are greeted with a professional welcome hero section, a clean YouTube URL input container, and a visual flowchart explaining the workflow.
+
 ![01. Welcome Screen](output_screenshorts/01_main_empty_dashboard.png)
 
 ### 2. Live URL Validation
 As soon as you paste a YouTube link, the application performs live formatting check validation to confirm the link structure.
+
 ![02. Live URL Validation](output_screenshorts/02_url_validation_feedback.png)
 
 ### 3. Active Generation Pipeline
 When you click the **Generate Notes** button, a multi-stage loading progress bar tracks each task in real-time, showing the active phase and estimated remaining time.
+
 ![03. Pipeline in Progress](output_screenshorts/03_pipeline_generation_in_progress.png)
 
 ### 4. Generation Pipeline Completion
 All stages are executed sequentially and package the formatted summaries into downloadable buffers.
+
 ![04. Pipeline Completion](output_screenshorts/04_pipeline_generation_completed.png)
 
 ### 5. Results KPI Dashboard
 A dynamic, metadata-driven metric dashboard calculates video duration, word counts, reading estimates, keywords, and quiz question counts.
+
 ![05. Dashboard Metrics](output_screenshorts/05_results_dashboard.png)
 
 ### 6. Interactive Workspace Tabs
 
 #### 📄 Summary Notes
 Deep-dive, structured notes complete with difficulty level indicators and core executive outlines.
+
 ![06. Summary Tab](output_screenshorts/06_summary_tab.png)
 
 #### 🕒 Chronological Video Timeline
 A clean, scannable table mapping topics directly to timestamps in the video.
+
 ![07. Timeline Tab](output_screenshorts/07_timeline_tab.png)
 
 #### 📌 Key Takeaways & Technical Concepts
 Core learnings, lessons, and definitions mapped out.
+
 ![08. Takeaways Tab](output_screenshorts/08_takeaways_tab.png)
 
 #### 💬 Important Quotes
 Highlighted notable statements and citations from the video transcript.
+
 ![09. Quotes Tab](output_screenshorts/09_quotes_tab.png)
 
 #### ❓ Practice Quizzes
 Interactive multiple-choice practice quizzes with instant answer checkmarks and explanations.
+
 ![10. Practice Quiz Tab](output_screenshorts/10_quiz_tab.png)
 
 #### 📥 Download & Export
 Export study guides to printable PDF formats, standard Markdown (`.md`), or plain Text (`.txt`).
+
 ![11. Export Tab](output_screenshorts/11_download_tab.png)
 
 #### 📥 PDF Export Complete
 Instant browser download trigger for custom PDF sheets.
+
 ![12. PDF Export Success](output_screenshorts/12_pdf_downloaded_popup.png)
 
 #### 📑 Video Transcript Preview
 A continuous paragraph preview of the transcript segments in their original language.
+
 ![13. Transcript Preview Tab](output_screenshorts/13_video_transcript_tab.png)
 
 #### 🕒 Session History Cache
 A history panel letting you cache and reload previous summaries in a single click.
+
 ![14. Session Cache Tab](output_screenshorts/14_session_history_cache.png)
 
